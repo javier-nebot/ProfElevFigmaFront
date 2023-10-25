@@ -1,0 +1,30 @@
+.titreh2 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 64px;
+  font-weight: 800;
+  font-family: inherit;
+}
+.button {
+  cursor: pointer;
+}
+.buttons,
+.commencer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+.commencer {
+  align-self: stretch;
+  flex-direction: column;
+  padding: var(--padding-81xl) var(--padding-xl);
+  gap: var(--gap-31xl);
+  text-align: center;
+  font-size: var(--heading-h2-size);
+  color: var(--text-gray-900);
+  font-family: var(--body-body-2);
+}

@@ -1,52 +1,11 @@
-.logotype {
-  position: relative;
-  width: 78px;
-  height: 28px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.profelevTousLes {
-  position: relative;
-  font-size: var(--body-body-2-size);
-  line-height: 24px;
-  color: var(--text-gray-300);
-  text-align: left;
-}
-.socialicons {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-.sociallinks {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-}
-.footer,
-.profmatiere {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-.footer {
-  align-self: stretch;
-  background-color: var(--default-black);
-  flex-direction: row;
-  align-items: flex-end;
-  padding: var(--padding-3xl) var(--padding-11xl);
-  text-align: center;
-  font-size: var(--font-size-mini);
-  color: var(--colors-background-neutral-white);
-  font-family: var(--body-body-2);
-}
 .profmatiere {
   position: relative;
   background-color: var(--colors-background-neutral-white);
   width: 100%;
   height: 1024px;
+  overflow: hidden;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }

@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { useRouter } from "next/router";
 import HeaderElev from "../components/header-elev";
 import MatiereElevContainer from "../components/matiere-elev-container";
-import LogoFooter from "../components/logo-footer";
+import Footer from "../components/footer";
 import styles from "./elev-matiere.module.css";
 
 const ElevMatiere: NextPage = () => {
@@ -25,18 +25,7 @@ const ElevMatiere: NextPage = () => {
     <div className={styles.elevmatiere}>
       <HeaderElev onRightNavClick={onRightNavClick} />
       <MatiereElevContainer />
-      <footer className={styles.footer}>
-        <div className={styles.logotype}>
-          <LogoFooter />
-        </div>
-        <div className={styles.profelevTousLes}>
-          © 2023 ProfELev. Tous les droits réservés
-        </div>
-        <div className={styles.sociallinks}>
-          <img className={styles.socialicons} alt="" src="/socialicons.svg" />
-          <img className={styles.socialicons} alt="" src="/socialicons1.svg" />
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

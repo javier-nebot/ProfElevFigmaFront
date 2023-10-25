@@ -1,110 +1,11 @@
-.listeProfs {
-  margin: 0;
-  position: relative;
-  font-size: inherit;
-  line-height: 40px;
-  font-weight: 600;
-  font-family: inherit;
-}
-.label1 {
-  position: relative;
-  letter-spacing: 0.01em;
-  line-height: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.input,
-.label {
-  justify-content: flex-start;
-}
-.label {
-  flex: 1;
-  width: 510px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.input {
-  align-self: stretch;
-  height: 43px;
-  align-items: flex-start;
-}
-.input,
-.inputParent,
-.listeProfsParent {
-  display: flex;
-  flex-direction: column;
-}
-.inputParent {
-  align-self: stretch;
-  height: 230px;
-  align-items: flex-start;
-  justify-content: space-between;
-  font-size: var(--body-body-2-size);
-  color: var(--colors-text-neutral-600);
-}
-.listeProfsParent {
-  width: 100%;
-  height: 594px;
-  align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-3xs);
-  box-sizing: border-box;
-  max-width: 530px;
-}
-.logotypeDark {
-  position: relative;
-  width: 78px;
-  height: 28px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.profelevTousLes {
-  position: relative;
-  font-size: var(--body-body-2-size);
-  line-height: 24px;
-  color: var(--text-gray-300);
-  text-align: left;
-}
-.socialIcons {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-.socialLinks {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-}
-.elevlisteprof,
-.footer {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--body-body-2);
-}
-.footer {
-  align-self: stretch;
-  background-color: var(--default-black);
-  flex-direction: row;
-  align-items: flex-end;
-  padding: var(--padding-3xl) var(--padding-11xl);
-  text-align: center;
-  font-size: var(--font-size-mini);
-  color: var(--colors-background-neutral-white);
-}
 .elevlisteprof {
   position: relative;
   background-color: var(--colors-background-neutral-white);
   width: 100%;
   height: 1024px;
+  overflow: hidden;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
-  font-size: var(--heading-h1-semibold-size);
-  color: var(--colors-text-neutral-800);
+  justify-content: space-between;
 }
