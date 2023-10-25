@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import CardInputForm from "./card-input-form";
 import styles from "./registration-elev-container1.module.css";
 
-const RegistrationElevContainer1: NextPage = () => {
+const RegistrationElevContainer: NextPage = () => {
   const router = useRouter();
 
   const onButtonClick = useCallback(() => {
@@ -50,4 +50,4 @@ const RegistrationElevContainer1: NextPage = () => {
   );
 };
 
-export default RegistrationElevContainer1;
+export default RegistrationElevContainer;
