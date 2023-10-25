@@ -7,7 +7,7 @@ import NavItemEleve from "./nav-item-eleve";
 import { useRouter } from "next/router";
 import styles from "./header-elev.module.css";
 
-const HeaderElev1: NextPage = () => {
+const HeaderElev: NextPage = () => {
   const router = useRouter();
 
   const onRightNavClick = useCallback(() => {
@@ -32,4 +32,4 @@ const HeaderElev1: NextPage = () => {
   );
 };
 
-export default HeaderElev1;
+export default HeaderElev;

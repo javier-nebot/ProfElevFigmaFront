@@ -1,8 +1,11 @@
-.donnesPerso {
+.donnesPerso,
+.listeProf,
+.matieres {
   cursor: pointer;
 }
 .donnesPerso,
-.listeProf {
+.listeProf,
+.matieres {
   position: relative;
   line-height: 20px;
   font-weight: 500;

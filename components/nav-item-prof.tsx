@@ -1,66 +1,32 @@
 import type { NextPage } from "next";
-import { useMemo, type CSSProperties } from "react";
+import { useMemo, type CSSProperties, useCallback } from "react";
 import styles from "./nav-item-prof.module.css";
+import { useRouter } from "next/router";
 
-type NavItemProfType = {
-  /** Style props */
-  donnesPersoCursor?: CSSProperties["cursor"];
-  matieresCursor?: CSSProperties["cursor"];
-  listeElevCursor?: CSSProperties["cursor"];
+const NavItemProf: NextPage = () => {
+  const router = useRouter();
 
-  /** Action props */
-  onDonnesPersoTextClick?: () => void;
-  onMatieresTextClick?: () => void;
-  onListeElevTextClick?: () => void;
-};
+  const onDonnesPersoTextClick = useCallback(() => {
+    router.push("/prof-donne-perso");
+  }, [router]);
 
-const NavItemProf: NextPage<NavItemProfType> = ({
-  onDonnesPersoTextClick,
-  donnesPersoCursor,
-  onMatieresTextClick,
-  matieresCursor,
-  onListeElevTextClick,
-  listeElevCursor,
-}) => {
-  const donnesPersoStyle: CSSProperties = useMemo(() => {
-    return {
-      cursor: donnesPersoCursor,
-    };
-  }, [donnesPersoCursor]);
+  const onMatieresTextClick = useCallback(() => {
+    router.push("/prof-matiere");
+  }, [router]);
 
-  const matieresStyle: CSSProperties = useMemo(() => {
-    return {
-      cursor: matieresCursor,
-    };
-  }, [matieresCursor]);
-
-  const listeElevStyle: CSSProperties = useMemo(() => {
-    return {
-      cursor: listeElevCursor,
-    };
-  }, [listeElevCursor]);
+  const onListeElevTextClick = useCallback(() => {
+    router.push("/prof-liste-e-leves");
+  }, [router]);
 
   return (
     <div className={styles.navitems}>
-      <div
-        className={styles.donnesPerso}
-        onClick={onDonnesPersoTextClick}
-        style={donnesPersoStyle}
-      >
+      <div className={styles.donnesPerso} onClick={onDonnesPersoTextClick}>
         Donnes perso
       </div>
-      <div
-        className={styles.donnesPerso}
-        onClick={onMatieresTextClick}
-        style={matieresStyle}
-      >
+      <div className={styles.donnesPerso} onClick={onMatieresTextClick}>
         Matieres
       </div>
-      <div
-        className={styles.listeElev}
-        onClick={onListeElevTextClick}
-        style={listeElevStyle}
-      >
+      <div className={styles.listeElev} onClick={onListeElevTextClick}>
         Liste Elev
       </div>
     </div>

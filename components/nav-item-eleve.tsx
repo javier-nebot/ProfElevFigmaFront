@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { useRouter } from "next/router";
 import styles from "./nav-item-eleve.module.css";
 
-const NavItemEleve1: NextPage = () => {
+const NavItemEleve: NextPage = () => {
   const router = useRouter();
 
   const onDonnesPersoTextClick = useCallback(() => {
@@ -23,7 +23,7 @@ const NavItemEleve1: NextPage = () => {
       <div className={styles.donnesPerso} onClick={onDonnesPersoTextClick}>
         Donnes perso
       </div>
-      <div className={styles.donnesPerso} onClick={onMatieresTextClick}>
+      <div className={styles.matieres} onClick={onMatieresTextClick}>
         Matieres
       </div>
       <div className={styles.listeProf} onClick={onListeProfTextClick}>
@@ -33,4 +33,4 @@ const NavItemEleve1: NextPage = () => {
   );
 };
 
-export default NavItemEleve1;
+export default NavItemEleve;

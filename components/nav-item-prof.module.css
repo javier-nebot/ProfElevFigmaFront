@@ -1,8 +1,11 @@
-.donnesPerso {
+.donnesPerso,
+.listeElev,
+.matieres {
   cursor: pointer;
 }
 .donnesPerso,
-.listeElev {
+.listeElev,
+.matieres {
   position: relative;
   line-height: 20px;
   font-weight: 500;

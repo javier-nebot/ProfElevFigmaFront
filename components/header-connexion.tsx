@@ -31,7 +31,7 @@ const HeaderConnexion: NextPage<HeaderConnexionType> = ({
       <Button
         className={styles.rightnav}
         variant="primary"
-        href="/landingpage"
+        href="/"
         onClick={onRightNavClick}
       >
         Accueil

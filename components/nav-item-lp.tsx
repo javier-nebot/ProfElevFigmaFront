@@ -4,37 +4,35 @@ import styles from "./nav-item-lp.module.css";
 
 const NavItemLp: NextPage = () => {
   const onAccueilTextClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='accueilText']");
+    const anchor = document.querySelector("[data-scroll-to='accueil']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start" });
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
 
   const onAvantagesTextClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='avantagesText']");
+    const anchor = document.querySelector("[data-scroll-to='avantages']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
 
   const onOpinionsTextClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='opinionsText']");
+    const anchor = document.querySelector("[data-scroll-to='opinion']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
 
   const onFonctionnementTextClick = useCallback(() => {
-    const anchor = document.querySelector(
-      "[data-scroll-to='fonctionnementText']"
-    );
+    const anchor = document.querySelector("[data-scroll-to='comntMarche']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
 
   const onCommencerTextClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='commencerText']");
+    const anchor = document.querySelector("[data-scroll-to='commencer']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
@@ -42,39 +40,19 @@ const NavItemLp: NextPage = () => {
 
   return (
     <nav className={styles.navitems}>
-      <div
-        className={styles.accueil}
-        data-scroll-to="accueilText"
-        onClick={onAccueilTextClick}
-      >
+      <div className={styles.accueil} onClick={onAccueilTextClick}>
         Acceuil
       </div>
-      <div
-        className={styles.accueil}
-        data-scroll-to="avantagesText"
-        onClick={onAvantagesTextClick}
-      >
+      <div className={styles.avantages} onClick={onAvantagesTextClick}>
         Avantages
       </div>
-      <div
-        className={styles.accueil}
-        data-scroll-to="opinionsText"
-        onClick={onOpinionsTextClick}
-      >
+      <div className={styles.accueil} onClick={onOpinionsTextClick}>
         Opinions
       </div>
-      <div
-        className={styles.accueil}
-        data-scroll-to="fonctionnementText"
-        onClick={onFonctionnementTextClick}
-      >
+      <div className={styles.accueil} onClick={onFonctionnementTextClick}>
         Comment ça marche?
       </div>
-      <div
-        className={styles.accueil}
-        data-scroll-to="commencerText"
-        onClick={onCommencerTextClick}
-      >
+      <div className={styles.accueil} onClick={onCommencerTextClick}>
         Commencer
       </div>
     </nav>

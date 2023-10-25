@@ -5,6 +5,13 @@
   font-weight: 500;
   cursor: pointer;
 }
+.avantages {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
 .navitems {
   margin: 0;
   flex: 1;
