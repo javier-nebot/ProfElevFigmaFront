@@ -2,8 +2,12 @@
   position: absolute;
   top: calc(50% - 14px);
   left: calc(50% - 39px);
+  font-size: var(--font-size-mini);
   line-height: 20px;
   font-weight: 500;
+  font-family: var(--body-body-2);
+  color: var(--colors-background-neutral-white);
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;

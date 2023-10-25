@@ -1,0 +1,41 @@
+.logotype {
+  position: relative;
+  width: 78px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.profelevTousLes {
+  position: relative;
+  font-size: var(--body-body-2-size);
+  line-height: 24px;
+  color: var(--text-gray-300);
+  text-align: left;
+}
+.socialicons {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.footer,
+.sociallinks {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.sociallinks {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--default-black);
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-3xl) var(--padding-11xl);
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--colors-background-neutral-white);
+  font-family: var(--body-body-2);
+}
