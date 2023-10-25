@@ -1,18 +1,21 @@
 import type { NextPage } from "next";
+import { useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
+import { useRouter } from "next/router";
 import styles from "./connexion-container.module.css";
 
-type ConnexionContainerType = {
-  /** Action props */
-  onButtonClick?: () => void;
-  onButton1Click?: () => void;
-};
+const ConnexionProfContainer: NextPage = () => {
+  const router = useRouter();
 
-const ConnexionContainer: NextPage<ConnexionContainerType> = ({
-  onButtonClick,
-  onButton1Click,
-}) => {
+  const onButtonClick = useCallback(() => {
+    router.push("/s-inscrire-prof");
+  }, [router]);
+
+  const onButton1Click = useCallback(() => {
+    router.push("/prof-donne-perso");
+  }, [router]);
+
   return (
     <div className={styles.frame}>
       <div className={styles.text}>
@@ -57,4 +60,4 @@ const ConnexionContainer: NextPage<ConnexionContainerType> = ({
   );
 };
 
-export default ConnexionContainer;
+export default ConnexionProfContainer;

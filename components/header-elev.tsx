@@ -2,25 +2,16 @@ import type { NextPage } from "next";
 import { useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
-import { useRouter } from "next/router";
 import LogoHeader from "./logo-header";
-import NavItemElev from "./nav-item-elev";
+import NavItemEleve from "./nav-item-eleve";
+import { useRouter } from "next/router";
 import styles from "./header-elev.module.css";
 
-type HeaderElevType = {
-  /** Action props */
-  onRightNavClick?: () => void;
-};
-
-const HeaderElev: NextPage<HeaderElevType> = ({ onRightNavClick }) => {
+const HeaderElev1: NextPage = () => {
   const router = useRouter();
 
-  const onDonnesPersoTextClick = useCallback(() => {
-    router.push("/elev-donne-perso");
-  }, [router]);
-
-  const onListeProfTextClick = useCallback(() => {
-    router.push("/elev-liste-prof");
+  const onRightNavClick = useCallback(() => {
+    router.push("/");
   }, [router]);
 
   return (
@@ -28,14 +19,11 @@ const HeaderElev: NextPage<HeaderElevType> = ({ onRightNavClick }) => {
       <div className={styles.logotype}>
         <LogoHeader />
       </div>
-      <NavItemElev
-        onDonnesPersoTextClick={onDonnesPersoTextClick}
-        onListeProfTextClick={onListeProfTextClick}
-      />
+      <NavItemEleve />
       <Button
-        className={styles.rightnav}
+        className={styles.rightNav}
         variant="primary"
-        href="/landingpage"
+        href="/"
         onClick={onRightNavClick}
       >
         Se déconnecter
@@ -44,4 +32,4 @@ const HeaderElev: NextPage<HeaderElevType> = ({ onRightNavClick }) => {
   );
 };
 
-export default HeaderElev;
+export default HeaderElev1;
