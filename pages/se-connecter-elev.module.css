@@ -1,0 +1,130 @@
+.seConnecter {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.vousNavezPas {
+  position: relative;
+  font-size: var(--body-body-2-size);
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  color: var(--colors-text-neutral-600);
+}
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--heading-h1-semibold-size);
+  color: var(--colors-text-neutral-800);
+}
+.button {
+  cursor: pointer;
+}
+.email {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.label {
+  flex: 1;
+  width: 510px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.textfield {
+  border: 0;
+  background-color: transparent;
+}
+.button1,
+.input,
+.textfield {
+  align-self: stretch;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.button1 {
+  cursor: pointer;
+}
+.frame {
+  width: 100%;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  max-width: 530px;
+}
+.logotype {
+  position: relative;
+  width: 78px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.profelevTousLes {
+  position: relative;
+  font-size: var(--body-body-2-size);
+  line-height: 24px;
+  color: var(--text-gray-300);
+  text-align: left;
+}
+.socialicons {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.sociallinks {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.footer,
+.seconnecterelev {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--body-body-2);
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--default-black);
+  height: 72px;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: var(--padding-3xl) var(--padding-11xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--colors-background-neutral-white);
+}
+.seconnecterelev {
+  position: relative;
+  background-color: var(--colors-background-neutral-white);
+  width: 100%;
+  height: 1024px;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: var(--body-body-2-size);
+  color: var(--colors-text-neutral-600);
+}

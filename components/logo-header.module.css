@@ -1,0 +1,15 @@
+.profelev {
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--body-body-2);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 28px;
+  flex-shrink: 0;
+}

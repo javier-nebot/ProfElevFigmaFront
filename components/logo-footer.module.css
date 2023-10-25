@@ -1,0 +1,12 @@
+.profelev {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 39px);
+  line-height: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 28px;
+}

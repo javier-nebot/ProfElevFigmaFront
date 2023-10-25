@@ -1,0 +1,118 @@
+.listeElevs {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.prenomtuteur {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.input,
+.label,
+.label1 {
+  justify-content: flex-start;
+}
+.label {
+  align-self: stretch;
+  height: 87px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input,
+.label1 {
+  width: 510px;
+}
+.label1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input {
+  align-items: flex-start;
+}
+.frame,
+.input,
+.labelParent {
+  display: flex;
+  flex-direction: column;
+}
+.labelParent {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: var(--body-body-2-size);
+  color: var(--colors-text-neutral-600);
+}
+.frame {
+  width: 100%;
+  height: 594px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  max-width: 530px;
+}
+.logotype {
+  position: relative;
+  width: 78px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.profelevTousLes {
+  position: relative;
+  font-size: var(--body-body-2-size);
+  line-height: 24px;
+  color: var(--text-gray-300);
+  text-align: left;
+}
+.socialicons {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.sociallinks {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.footer,
+.proflisteeleves {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--body-body-2);
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--default-black);
+  flex-direction: row;
+  align-items: flex-end;
+  padding: var(--padding-3xl) var(--padding-11xl);
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--colors-background-neutral-white);
+}
+.proflisteeleves {
+  position: relative;
+  background-color: var(--colors-background-neutral-white);
+  width: 100%;
+  height: 1024px;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: var(--heading-h1-semibold-size);
+  color: var(--colors-text-neutral-800);
+}

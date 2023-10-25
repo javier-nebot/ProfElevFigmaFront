@@ -1,0 +1,48 @@
+.webdesigncreateIcon {
+  position: relative;
+  width: 204px;
+  height: 160px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.description,
+.heading {
+  align-self: stretch;
+  position: relative;
+}
+.heading {
+  margin: 0;
+  font-size: inherit;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.description {
+  font-size: var(--body-body-1-size);
+  line-height: 26px;
+}
+.details,
+.div {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.details {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+}
+.div {
+  flex: 1;
+  align-items: center;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 320px;
+  max-width: 430px;
+  text-align: center;
+  font-size: var(--heading-h5-size);
+  color: var(--text-gray-900);
+  font-family: var(--body-body-2);
+}

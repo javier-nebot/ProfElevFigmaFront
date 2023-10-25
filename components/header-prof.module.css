@@ -1,0 +1,27 @@
+.logotype {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rightnav {
+  width: 147px;
+  cursor: pointer;
+}
+.header {
+  align-self: stretch;
+  background-color: var(--color-darkorange);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-xl);
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--body-body-2);
+}

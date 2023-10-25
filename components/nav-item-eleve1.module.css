@@ -1,0 +1,25 @@
+.donnesPerso {
+  cursor: pointer;
+}
+.donnesPerso,
+.listeProf {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.navitems {
+  margin: 0;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+  min-width: 200px;
+  text-align: left;
+  font-size: var(--body-body-2-size);
+  color: var(--text-gray-900);
+  font-family: var(--body-body-2);
+}
