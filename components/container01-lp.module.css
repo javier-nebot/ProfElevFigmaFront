@@ -22,7 +22,7 @@
   font-size: var(--subtitle-subtitle-1-size);
   line-height: 32px;
   color: var(--text-gray-900);
-  text-align: left;
+  text-align: justify;
 }
 .text {
   flex: 1;
@@ -40,7 +40,7 @@
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  height: 388px;
+  height: auto;
   flex-shrink: 0;
   object-fit: cover;
 }

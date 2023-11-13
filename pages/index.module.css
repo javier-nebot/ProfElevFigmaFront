@@ -1,5 +1,7 @@
 .logotype {
-  width: 81px;
+  width: 100%;
+  max-width: 81px;
+  margin: 0 auto;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -15,19 +17,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
+  width: 100%; /* Hacer que el ancho sea completo */
+  max-width: 280px; /* Establecer un ancho máximo */
+  margin: 0 auto;
   flex-shrink: 0;
 }
 .socialicons {
   position: relative;
-  width: 24px;
+  width: 100%; /* Hacer que el ancho sea completo */
+  max-width: 24px; /* Establecer un ancho máximo */
+  margin: 0 auto;
   height: 24px;
 }
 .sociallinks {
   overflow: hidden;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column; /* Cambiar a dirección de columna en pantallas más pequeñas */
+  align-items: center;
   justify-content: flex-end;
   gap: var(--gap-base);
 }
@@ -39,11 +45,13 @@
 .footerex {
   align-self: stretch;
   background-color: var(--default-black);
-  flex-direction: row;
-  justify-content: space-between;
-  padding: var(--padding-3xl) var(--padding-11xl);
+  flex-direction: column; /* Cambiar a dirección de columna en pantallas más pequeñas */
+  gap: var(--gap-base); /* Ajustar espacio entre elementos */
+  align-items: center; /* Centrar los elementos en pantallas más pequeñas */
+  justify-content: center; /* Centrar los elementos en pantallas más pequeñas */
+  padding: var(--padding-mini) var(--padding-3xl); /* Ajustar el relleno para pantallas más pequeñas */
+  font-size: var(--font-size-small);
   text-align: center;
-  font-size: var(--font-size-mini);
   color: var(--colors-background-neutral-white);
   font-family: var(--body-body-2);
 }

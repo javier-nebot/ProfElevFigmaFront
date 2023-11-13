@@ -65,3 +65,21 @@ body {
   --padding-mini: 15px;
   --padding-20xl: 39px;
 }
+
+@media screen and (max-width: 767px) {
+  :root {
+    /* Ajustes para pantallas pequeñas */
+    --body-body-2-size: 14px;
+    --font-size-mini: 14px;
+    --heading-h2-size: 30px;
+    --body-body-1-size: 14px;
+    --heading-h5-size: 18px;
+    --subtitle-subtitle-1-size: 16px;
+    --font-size-53xl: 48px;
+    --heading-h1-semibold-size: 20px;
+
+    /* Otros ajustes según sea necesario */
+  }
+
+  /* Otras reglas de estilo específicas para pantallas pequeñas */
+}

@@ -12,14 +12,16 @@
   flex-shrink: 0;
 }
 .creativeIcon {
-  max-height: 100%;
-  width: 444px;
-  object-fit: cover;
+  max-height: 450px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
 }
 .description {
   align-self: stretch;
   position: relative;
   line-height: 32px;
+  text-align: justify;
 }
 .text {
   flex: 1;
